@@ -3,8 +3,46 @@ h1{
 	color: red;
 }
 small{
-	color: green;
+	/*color: red; text */
+	/*color: #7d8a78; Hex code*/
+	/*color: #f00; Short Hex code*/
+	color: rgb(255,0,0);
 	word-spacing: 20px;
 	letter-spacing: 5px;
 	font-size: 30px;
+}
+
+/*universal selector*/
+
+*{
+	margin: 0px;
+	padding: 0px;
+	/*color: red;*/
+}
+
+/*Tag selector / Element Selector*/
+
+p{
+	font-size: 30px;
+	/*color: green;*/
+}
+
+/*Attribute Selector*/
+a[target="_blank"]{
+	color: black;
+	text-decoration: none;
+}
+/*Id selector*/
+
+#idselector{
+	color: brown;
+	text-indent: 60px;
+}
+
+/*Class selector*/
+
+.classselector{
+	color: pink;
+	font-size: 30px;
+	word-spacing: 20px;
 }
