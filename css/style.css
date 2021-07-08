@@ -1,0 +1,10 @@
+h1{
+	text-transform: uppercase;
+	color: red;
+}
+small{
+	color: green;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+	font-size: 30px;
+}
