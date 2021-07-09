@@ -1,6 +1,7 @@
 h1{
 	text-transform: uppercase;
 	color: red;
+	text-align: center;
 }
 small{
 	/*color: red; text */
@@ -45,4 +46,105 @@ a[target="_blank"]{
 	color: pink;
 	font-size: 30px;
 	word-spacing: 20px;
+}
+
+
+/*Descendent Selector*/
+
+.desc a{
+	color: red;
+	text-decoration: none;
+}
+
+/*Child Selector*/
+
+.child > a{
+	color: green;
+}
+
+
+/*pseudo selector*/
+
+a:link{
+	color: red;
+}
+
+a:hover{
+	color: green;
+}
+
+a:active{
+	color: yellow;
+}
+a:visited{
+	color: brown;
+}
+
+/*Target Selector*/
+
+:target{
+	color: red;
+	border: 1px solid green;
+}
+
+
+/*Register Form*/
+
+form{
+	width: 80%;
+	margin: auto;
+}
+
+input[type="text"],input[type="number"]{
+	width: 100%;
+	border: 2px solid #ccc;
+	background-color: gray;
+	outline:none;
+	height: 40px;
+}
+input[type="text"]:focus,input[type="number"]:focus{
+	border: 3px solid #555;
+	/*background-color: red;*/
+}
+
+div#dob_select{
+	width: 90%;
+	background-color: #EEE;
+	border-radius: 4px;
+	outline:none;
+	padding: 7px;
+}
+
+div#dob_select select{
+	width: 30%;
+	padding: 5px;
+}
+
+input[type="radio"]:checked+label{
+	color: red;
+	font-weight: bold;
+}
+
+textarea#address{
+	width: 100%;
+	height: 100px;
+	border: 2px solid #ccc;
+	border-radius:5px;
+	outline: none;
+}
+
+
+
+input[type="checkbox"]:enabled+label{
+	color: yellow;
+	font-style: italic;
+}
+
+input[type="checkbox"]:checked+label{
+	color: #f00;
+	font-style: normal;
+}
+
+input[type="checkbox"]:disabled+label{
+	color: #fff;
 }
