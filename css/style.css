@@ -381,3 +381,47 @@ div.float_right img{
 .offlinefont{
 	font-family: a;
 }
+
+/*Flex*/
+.FlexOne,.FlexTwo,.FlexThree,.FlexFour {
+	display: flex;
+}
+.FlexOne div,.FlexTwo div,.FlexThree div,.FlexFour div{
+	color: #fff;
+	font-size: 30px;
+	padding: 20px;
+	text-align: center;
+	width: 50px;
+	height: 50px;	
+}
+
+.FlexOne div{
+	flex: 1;
+}
+.FlexTwo div:nth-child(3){
+	flex-basis: 500px;
+}
+
+
+.FlexThree div:nth-child(1){
+	flex-grow: 1;
+}
+.FlexThree div:nth-child(2){
+	flex-grow: 1;
+}
+.FlexThree div:nth-child(3){
+	flex-grow: 1;
+}
+.FlexThree div:nth-child(4){
+	flex-grow: 3;
+}
+.FlexThree div:nth-child(5){
+	flex-grow: 1;
+}
+
+.FlexFour{
+	/*flex-direction: row;*/
+	/*flex-direction: row-reverse;*/
+	/*flex-direction: column;*/
+	flex-direction: column-reverse;
+}
